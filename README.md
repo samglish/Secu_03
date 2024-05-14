@@ -43,6 +43,7 @@ hello.exe: PE32 executable (GUI) Intel 80386, for MS Windows
 <hr>
 
 ## Use my script
+```terminal
 ┌─[✗]─[samglish@parrotOS]─[~/Desktop]
 └──╼ $bash testt.sh 
 ***********************************************************
@@ -92,7 +93,7 @@ save command, future console restarts will use this
 environment again
 
 msf6 > 
-
+```
 <hr>
 
 ## exploit with msfconsole

